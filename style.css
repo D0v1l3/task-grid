@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  background-color: rgb(81, 91, 94);
+}
+
+.container {
+  max-width: 1000px;
+  height: 300px;
+  margin: 20px auto;
+  border: none;
+  display: grid;
+  background-color: rgb(255, 255, 255);
+  grid-template-columns: repeat(6, 15%);
+  grid-template-rows: repeat(3, 30%);
+  grid-gap: 1em 1em;
+  justify-items: stretch;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+}
+
+.cell {
+  line-height: 2em;
+  background-color: rgb(77, 76, 76);
+  text-align: center;
+  font-size: 2em;
+  border-radius: 5%;
+  color: white;
+}
+
+.el-1,
+.el-3,
+.el-5,
+.el-7,
+.el-9,
+.el-10 {
+  background-color: rgb(180, 179, 179);
+  color: black;
+}
+
+.el-9 {
+  grid-column: span 3;
+  border: solid 3px red;
+}
